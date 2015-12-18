@@ -1,0 +1,11 @@
+ebook-convert EAN.html 9781280004797.pdf --base-font-size 0 --embed-all-fonts --extra-css 479.css --pdf-page-numbers --preserve-cover-aspect-ratio --toc-filter "(?smi)<page.*?/page>" --no-chapters-in-toc --max-toc-links 0 --dont-package
+
+
+ebook-convert EAN.html 9781280004797.pdf --base-font-size 0 --embed-all-fonts --extra-css C:\TEMPOEB\479\479.css --pdf-page-numbers --preserve-cover-aspect-ratio --max-toc-links 0 --dont-package --disable-font-rescaling --pdf-default-font-size 12px --pdf-mono-font-size 14px
+
+*******
+
+ebook-convert 9781280004797.Html 9781280004797.epub --extract-to "C:\TEMPOEB\479\EPUB" --no-default-epub-cover --dont-split-on-page-breaks
+
+$OPF = Get-ChildItem C:\TEMPOEB\479\EPUB\content.opf
+
